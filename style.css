@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap");
 
 body {
   background: rgba(34, 42, 54, 0.95);
+  margin: 0;
   font-family: Poppins;
 }
-
+/* Navbar */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -22,6 +24,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  cursor: pointer;
 }
 
 .mx {
@@ -40,6 +43,14 @@ body {
   line-height: 30px;
   color: white;
   border: none;
+  cursor: pointer;
+  transition: 300ms all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover {
+  background-color: #494d99;
 }
 
 .logo {
@@ -48,4 +59,138 @@ body {
   font-weight: bold;
   font-size: 30px;
   line-height: 45px;
+  color: white;
+}
+/* Introduction Hello parts */
+.main-text {
+  display: flex;
+  justify-content: space-between;
+}
+.main-page {
+  background-image: url("/img/port.jpg");
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: right top;
+  padding-bottom: 8rem;
+}
+.margin-intro {
+  margin-top: 170px;
+  margin-left: 118px;
+}
+
+.intro {
+  color: white;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 36px;
+}
+.intro-desc {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+}
+.buttons > a {
+  color: white;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.skills {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-desc {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 180%;
+  color: white;
+  text-align: center;
+  margin: 6rem 4rem 0 4rem;
+}
+.reactangles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+.box-1 {
+  width: 288px;
+  height: 288px;
+  background-color: #e5e5e5;
+  margin: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: black;
+  text-align: left;
+  justify-content: end;
+  cursor: pointer;
+  padding: 0 15px 15px 15px;
+  transition: 300ms all ease-in-out;
+}
+.box-1:hover {
+  background-color: #494d99;
+  color: white;
+}
+
+.services {
+  background-color: black;
+  padding-top: 100px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: black;
+  margin: 125px 100px 0 100px;
+}
+.connect {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 120px;
+}
+.form > input {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+  align-items: left;
+}
+.form > label {
+  margin-bottom: 25px;
+}
+.form > input {
+  margin-bottom: 50px;
 }
